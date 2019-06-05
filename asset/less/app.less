@@ -1,0 +1,310 @@
+@import url('https://fonts.googleapis.com/css?family=Baloo|Ubuntu');
+@width: 10px;
+@height: @width + 10px;
+@backgroundcolor: #fff; 
+@primaryColor: #F74D4D;
+@secondaryColor: #F32D2D;
+@headerBackground: #ddd;
+@headerWidth: 100%;
+@headerHeight: 50px;
+@footerBackground: #6D6D6D;
+a{
+    cursor: pointer;
+}
+body {
+    padding: 0px;
+    background: @backgroundcolor;
+    margin: 0px;
+}
+
+input{
+    background: rgb(211, 208, 208);
+    border:1px solid rgb(218, 216, 216);
+    user-select: none;
+    appearance: none;
+    -webkit-appearance: none;
+}
+.header {
+    // background: #F32D2D;
+    background: @headerBackground;
+    height: @headerHeight;
+
+
+    .logo {
+        font-size: 2.5em;
+        font-weight: bold;
+        color: rgb(59, 58, 58);
+    }
+
+    .logo-image{
+        background: url('https://res.cloudinary.com/dp1lewjma/image/upload/v1557319009/cecula-logo-notext.png');
+        background-position: 0;
+        background-size: 100%;
+        height: 50px;
+        width: 50px;
+        cursor: pointer;
+        display: inline-block;
+    }
+
+
+    .main {
+        
+         ul {
+             li:hover{
+                 background: @primaryColor;
+                a{
+                     color: whitesmoke;
+                }
+             }
+         }
+    }
+
+    .nav{
+        ul{
+            li{
+                display: inline-flex;
+                display: inline-flex;
+                list-style: none;
+                padding: 5px;
+                cursor: pointer;
+                line-height: 1.1em;
+                font-size: 1.1em;
+                color: rgb(71, 71, 71);
+                a{
+                    color: rgb(83, 83, 83);
+                    border: 3px;
+                    border-radius: 5px;
+                    padding: 5px;
+                    width: 100px;
+                    text-align: center;
+                    text-decoration: none;
+                }
+               
+            }
+        }
+    }
+
+    .nav:last-child{
+         position: relative;
+         padding-left: 450px;
+
+
+        ul{
+            li:first-child {
+                a {
+                    background: rgb(233, 63, 63);
+                    border: 3px solid rgb(192, 192, 192);
+                    color: whitesmoke;
+                }
+                 :hover {
+                     background: rgb(241, 110, 110);
+                     border: 3px solid rgb(233, 63, 63);
+                     color: rgb(255, 255, 255);
+                 }
+               
+            }
+
+            li:last-child {
+                a {
+                    background: #ddd;
+                    border: 3px solid rgb(250, 87, 87);
+                    color: rgb(95, 93, 93);
+                }
+                :hover{
+                    background: @primaryColor;
+                    border: 3px solid rgb(192, 192, 192);
+                    color: rgb(245, 245, 245);
+                }
+            }
+        }
+    }
+
+}
+
+.background-image{
+            position: relative;
+            background: url('https://res.cloudinary.com/dp1lewjma/image/upload/v1557319583/Artboard_1.png');
+            background-position: 0px 0px;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            height: 640px;
+            width: 1350px;
+            display: inline-block;
+
+
+            .sign-up{
+                position: relative;
+                display: block;
+                margin-top: 60px;
+                margin-right: 30px;
+
+
+                #signup-form{
+                    width: 400px;
+                    height: auto;
+                    background: rgb(230, 230, 230,0.3);
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px rgba(131, 127, 127, 0.3);
+                    float: right;
+                    opacity: 0.9;
+                    filter: alpha(opacity=70);
+                    font-family: 'Ubuntu';
+
+                    .form-heading {
+                        font-family:'Ubuntu',
+                        sans-serif;
+                        color: gray;
+                        font-size:1.2em;
+                    }
+                    .form-body {
+                        padding: 30px;
+                        
+                        input{
+                            width: 100%;
+                            line-height: 1.9em;
+                            text-indent: 1em;
+                        }
+                    }
+
+                    .form-footer{
+                        
+
+                        button{
+                            background: #FF2500;
+                            color: #fff;
+                        }
+                        .material-icons{
+                            // content: url('/asset/images/baseline_info_black_24dp.png');
+                            width: 23px;
+                            height: 23px;
+                        }
+                    }
+                }
+            }
+}
+
+.about-us{
+    background: rgb(240, 239, 239);
+    margin-top: -10px;
+    font-size: 0.9em;    
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 2px solid rgb(240, 239, 239);
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgb(206, 205, 205);
+
+    .about-us-title{
+        text-align: center;
+        font-size: 1.8em;
+        padding: 20px;
+    }
+
+}
+
+
+.footer{
+    position: relative;
+    height: auto;
+    .footer-background{
+        font-size: 1.1em;
+        color: rgb(185, 185, 185);
+
+        ul{
+            padding: 20px;
+            list-style: none;
+            .footer-title{
+                font-weight: bold;
+                font-size: 1.2em;
+            }
+            li{
+                font-size: 0.9em;
+                a{
+                    text-decoration: none;
+                    color: rgb(185, 185, 185);
+                }
+            }
+        }
+
+    }
+    background: @footerBackground;
+}
+
+
+.login-background{
+    position: relative;
+    display: block;
+    background: #6D6D6D;
+    height: 700px;
+    margin-top: -20px;
+
+    .login{
+        position: relative;
+        width: 500px;
+        height: auto;
+        padding: 100px;
+        padding-top: 100px;
+        margin-left: 400px;
+        align-content: center;
+
+
+         .logo{
+             background: url('https://res.cloudinary.com/dp1lewjma/image/upload/v1557319009/cecula-logo-notext.png');
+             background-position: 0;
+             background-size: 100%;
+             height: 100px;
+             width: 100px;
+             cursor: pointer;
+             display: inline-block;
+             margin-left: 100px;
+             margin-bottom: 30px;
+         }
+
+        #login-form{
+            background: #ddd;
+            box-shadow: 0px 0px 10px rgba(156, 155, 155, 0.541); 
+            font-family: 'Ubuntu';
+            height: 300px;;
+            .form-heading{
+                text-align: center;
+                font-size: 1.5em;
+                padding: 5px;
+            }
+            .form-body{
+                padding: 10px;
+                padding-left: 40px;
+                
+                input {
+                    text-indent: 10px;
+                }
+            }
+            .form-footer{
+                padding: 10px;
+                button:first-child{
+                    background: #FF2500;
+                    color: #fff;
+                }
+                button:last-child{
+                                        background: #6D6D6D;
+                                        color: #fff;
+                }
+                .forgot-password{
+                    padding: 10px;
+                    text-align: center;
+                    a{
+                        // text-decoration: none;
+                        color: #6D6D6D;
+                    }
+                    a:hover{
+                        text-decoration: underline;
+                        color:rgba(107, 70, 192, 0.685)
+                    }
+                }
+            }
+        }
+    }
+}
+
+#errorMessage{
+     text-align: center;
+     color:rgb(207, 26, 26);
+}

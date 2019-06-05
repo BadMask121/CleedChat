@@ -1,0 +1,8 @@
+{
+    "DB_INSTANCE": "mongodb+srv://",
+    "DB_HOST": "@cluster0-wvvi5.mongodb.net/test?retryWrites=true",
+    "DB_PORT": "27017",
+    "DB_USERNAME": "cleed_chat",
+    "DB_PASSWORD": "cleedteam121",
+    "DB_DATABASE": "chatcleed_db"
+}

@@ -1,0 +1,9 @@
+
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule !.*\.php$ %{REQUEST_FILENAME}.php [QSA,L]
+RewriteRule !.*\.html$ %{REQUEST_FILENAME}.html [QSA,L]
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+DirectoryIndex login.html       
+order deny,allow

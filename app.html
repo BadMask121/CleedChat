@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="asset/images/favico.png">
+    <title>Cleed Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet/less" type="text/css" href="/asset/less/app.less" />
+</head>
+
+<body>
+    <div class="content">
+        <div class="container-fluid header-main">
+            <div class="row header">
+                <div class="col-sm logo">
+                    <span class="logo-image"></span> <span>Cleed Chat</span>
+                </div>
+                <div class="col-sm nav main">
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <!-- <li>
+                            <a href="#?feature">Feature</a>
+                        </li> -->
+                    </ul>
+                </div>
+                <div class="col-sm nav">
+                    <ul style="font-size:0.8em">
+                        <li><a href="account/login.html" id="loginBtn">LOGIN</a></li>
+                        <li><a href="#signup">SIGN UP</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div>
+            <div class="background-image">
+                <div class="sign-up" id="signup">
+                    <form id="signup-form" autocomplete="off">
+                        <div class="form-heading gray">
+                            <div class="form-header text-center mt-3 mb-3 ls--1">Your Customers Are Your Best Friends <br> Communicate with them</div>
+                        </div>
+                        <div class="signup-error-message error-message" id="errorMessage"></div>
+                        <div class="form-body">
+                            <div class="pair-group">
+                                <input type="text" id="fullName" autocomplete="name" class="input-block-level" placeholder="Full Name" title="First Name and Last Name" aria-required="true">
+                                <input type="email" id="email" autocomplete="email" class="input-block-level" placeholder="Email" title="eg. someone@company.com" aria-required="true">
+                                <input type="password" id="newPassword" autocomplete="new-password" class="input-block-level" placeholder="Password" aria-required="true">
+                                <input type="password" id="confirmPassword" autocomplete="confirm-password" class="input-block-level" placeholder="Confirm Password" aria-required="true">
+                            </div>
+                            <div class="text-secondary mt-3 mb-2">
+                                <div class="d-inline-block text-center">By clicking Signup, you agree to the Cleed Chat <a target="_blank" href="https://www.cecula.com/business/legal/terms">Terms of Use</a> and <a target="_blank" href="https://www.cecula.com/business/legal/privacy">Privacy Policy</a></div>
+                            </div>
+                        </div>
+                        <div class="form-footer">
+                            <button class="btn btn-large btn-block invitation-btn" type="button" onclick="javascript.void(0)" id="signupbtn">Signup</button>
+                            <div class="text-secondary mt-3 mb-2">
+                                <div class="d-inline-block"><i class="material-icons">&#xE88F;</i></div>
+                                <div class="d-inline-block align-top" style="width: 86%; font-size: 90%;">Verification Codes will be sent to your email</div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="about-us" id="about">
+                <div class="about-us-title">About Us</div>
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec orci lacinia, varius neque in, imperdiet diam. Curabitur sollicitudin dui nisl, vel volutpat nisi dignissim vel. Ut non eros consequat, dapibus nunc sed, bibendum sapien.
+                        Morbi mollis mi eu imperdiet sollicitudin. Nullam pretium gravida odio, id luctus lacus consequat pretium. Etiam non venenatis quam. Nullam a leo ex. Aliquam orci nisi, tempor in faucibus id, suscipit at diam. Etiam condimentum
+                        diam ut mauris sollicitudin finibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras tristique tellus nec turpis semper commodo.
+                        In porta hendrerit magna, ac finibus leo auctor non. Etiam consectetur nibh velit, eu sodales eros fringilla quis.</p>
+                    <p>Fusce tempus felis tristique ante egestas sollicitudin. Proin porttitor libero sed eros mattis, at finibus enim mattis. Nullam accumsan vulputate nisi nec auctor. In hac habitasse platea dictumst. In porta gravida orci quis efficitur.
+                        Ut dui nunc, pretium sed laoreet nec, facilisis vel diam. Suspendisse condimentum ac lacus ut ullamcorper. Aliquam convallis neque velit, sed tempor turpis vestibulum hendrerit. Curabitur pretium rhoncus felis non rhoncus. Ut nec
+                        porta leo. Suspendisse luctus mauris ante, sed vestibulum mauris aliquam in. Aenean urna lorem, aliquet a arcu sed, mattis dictum leo. Nunc orci quam, euismod id est ut, pellentesque commodo ligula. Quisque blandit, nisl ut faucibus
+                        gravida, velit urna imperdiet quam, in ornare nunc enim non eros.</p>
+                    <p>Nulla posuere tincidunt commodo. Cras posuere turpis id lectus ultrices elementum. Sed in magna pharetra, faucibus turpis sit amet, condimentum mauris. Praesent consequat cursus nibh id tempus. Sed dui ipsum, maximus eu mauris in,
+                        suscipit tempor quam. In fringilla purus non dignissim egestas. Praesent orci velit, blandit varius justo non, volutpat viverra libero. Duis quis pretium elit. Mauris feugiat fermentum massa at ullamcorper. Nunc ut tellus et arcu
+                        luctus faucibus eu ac mauris. Aliquam rutrum ultricies dolor, nec bibendum felis dapibus eget. Quisque id ullamcorper risus. Donec rhoncus consequat erat vitae pharetra. Maecenas vestibulum bibendum nibh sit amet blandit. Curabitur
+                        eros metus, fermentum sed ullamcorper et, rutrum et purus. Praesent quis ex ac risus sagittis porttitor.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="container footer-background">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm">
+                            <ul>
+                                <li class="footer-title">Company</li>
+                                <li><a href="#about">About Us</a></li>
+                                <li><a href="#Features">Features</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul>
+                                <li class="footer-title">Customer</li>
+                                <li><a href="/account/login.html">Login</a></li>
+                                <li><a href="#signup">SignUp</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm">
+                            <ul>
+                                <li class="footer-title">Social Media</li>
+                                <li><a href="#facebook">Facebook</a></li>
+                                <li><a href="#twitter">Twitter</a></li>
+                                <li>
+                                    <a href="#linkedin">Linkedin</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+    <script src="config.js"></script>
+    <script src="asset/js/axios.js"></script>
+    <script src="asset/js/crypto.js"></script>
+    <script src="asset/js/app.js"></script>
+
+    <script type="text/javascript">
+        var cleedChat = cleedChat || {};
+        cleedChat.widget = cleedChat.widget || {
+            accessToken: "VnBr1fHIo+zv2gtbP5Qyq/8QR2FTFYbYuuQAtxHc6tk="
+        };
+
+        var d = document;
+        s = d.createElement("script");
+        s.type = "text/javascript";
+        s.id = "widgetscript";
+        s.defer = true;
+        s.src = "widget.js";
+        t = d.getElementsByTagName("script")[0];
+        t.parentNode.insertBefore(s, t);
+        d.write("<div id='chat-widget'></div>");
+    </script>
+</body>
+
+
+
+</html>

@@ -1,0 +1,7 @@
+for production  based on MongoDB
+
+* Replication must be activated
+
+* Sharding needs to be implemented
+
+* automatica back to CleedChat Server

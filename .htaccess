@@ -1,0 +1,7 @@
+RewriteEngine  on
+<Files ~ "^\.(htaccess|htpasswd)$">
+deny from all
+</Files>
+DirectoryIndex app.html       
+order deny,allow
+

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="/asset/images/favico.png">
+    <title>Cleed Chat</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet/less" type="text/css" href="../asset/less/app.less" />
+</head>
+
+<body>
+    <div class="">
+        <div class="container-fluid login-background">
+            <div class="login" id="login">
+                <a href="/app.html">
+                    <div class="logo">
+                    </div>
+                </a>
+                <form id="login-form" autocomplete="off">
+                    <div class="form-heading gray">
+                        <div class="form-header text-center mt-3 mb-3 ls--1">Sign In</div>
+                        <hr>
+                    </div>
+                    <div class="login-error-message error-message " id="errorMessage"></div>
+                    <div class="form-body">
+                        <div class="pair-group">
+                            <input type="email" id="email" autocomplete="email" class="input-block-level" placeholder="Email" title="eg. someone@company.com" aria-required="true">
+                            <input type="password" id="newPassword" autocomplete="new-password" class="input-block-level" placeholder="Password" aria-required="true">
+                        </div>
+                    </div>
+                    <div class="form-footer">
+                        <button class="btn btn-large btn-block invitation-btn" type="button" id="login_btn">Login</button>
+                        <div class="forgot-password"> <a href="forgot.html"> Forgot Password</a></div>
+                    </div>
+
+
+                </form>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/3.9.0/less.min.js"></script>
+        <script src="../config.js"></script>
+        <script src="../asset/js/axios.js"></script>
+        <script src="../asset/js/crypto.js"></script>
+        <script src="../asset/js/app.js"></script>
+        <script src="/widget.js"></script>
+
+</body>
+
+</html>
